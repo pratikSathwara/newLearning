@@ -1,0 +1,29 @@
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+}
+
+.main_header {
+  width: 100%;
+  color: blue;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+h2:hover {
+  color: red;
+}
+
+h2::after {
+  content: " pratik";
+}
+/*# sourceMappingURL=main.css.map */
+
