@@ -14,36 +14,102 @@
 
     </head>
     <body>
-      https://stackoverflow.com/
-      https://medium.com/
-      https://www.youtube.com/c/akshaymarch7/playlists
-      <br>
-      <div id="demo"></div>
-      <div id="demo1"></div>
-      <div id="demo2"></div>
-      <!-- <button onclick="getage()">Button</button> -->
-<br>
       <script type="text/javascript">
-        function prom(){
-          return new Promise(function(resolve,reject){
+const arr = [1,2,3,4,5,5];
+// function double(x){
+//   return x*2;
+// }
+// const output = arr.map(double);
+// console.log(output);
+// function isodd(x){
+//   return x%2;
+// }
+// const output = arr.filter(isodd);
+// console.log(output);
 
-            console.log("featching data , please wait....");
+// function iseven(x){
+//   return x%2 === 0;
+// }
+// const output = arr.filter(iseven);
+// console.log(output);
 
-          setTimeout( ()=> {
-            $.get("https://jsonplaceholder.typicode.com/todos/1",function(data){
-                resolve(data);
-              }).fail(err => {
-              reject("fail to load");
-            });
-          },2000);
-          });
-        }
-        prom().then( (result)=>{
-          console.log(result);
-        }).catch( (error)=>{
-          console.log(error);
-        });
-   // h.message();
+// function findsum(arr){
+//   let max = 0;
+//   for(var i=0;i<arr.length;i++){
+//     max = max + arr[i];
+//   }
+//   return max;
+// }
+// console.log(findsum(arr));
+
+
+// const users = [
+// {
+//   first : 'akshay',
+//   last : 'kumar',
+//   age : 26
+// },
+// {
+//   first : 'akshay',
+//   last : 'trump',
+//   age : 27
+// }]
+
+// const output = users.filter((x)=> x.age >30).map((x)=> x.age);
+// console.log(output);
+
+// function z(){
+//   var b= 900;
+//   function x(){
+//     var a= 7;
+//     function y(){
+//       console.log(a,b);
+//     }
+//     y();
+//   }
+//   x();
+// }
+// z();
+
+// let welcome = (name)=>{
+//   return `Hello & welcome ${name}`
+// }
+// console.log(welcome("pratik sathawara"))
+
+// var obj = {
+//   first : "pratik",
+//   last : "sathawara",
+//   age : 25,
+//   email : "hello@gmail.com"
+// };
+// for(var key in obj){
+//   document.write(key + ":" + obj[key] + "<br>");
+// }
+
+// function sum(name,cource,...args){
+//   console.log(arguments);
+//   document.write(`Hello ${name} of ${cource} : `);
+//   let sum = 0;
+//   for(let i in args){
+//     sum += args[i];
+//   }
+//   document.write(sum + "<br>");
+// }
+// sum("pratik","it",20,30,40);
+
+// function show(...args){
+// let sum = 0;
+// for(let i of args){
+//   sum += i;
+// }
+// console.log("sum =" + sum);
+// }
+// show(10,20,30);
+
+
+
+
+
  </script>
     </body>
 </html>
